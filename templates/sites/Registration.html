@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Account Creation</title>
+    <link rel="stylesheet" href="../../static/css/styles.css">
+</head>
+
+<body>
+ <form action ="/register" enctype="multipart/form-data" name="myForm"  method="POST" >
+{%  csrf_token %}
+<h1>Registration</h1>
+ <div class="TextBox">
+     <input type="email" placeholder="Email" name="mail" required>
+ </div>
+ <div class="TextBox">
+        <input type="text" placeholder="Username" name="username" required>
+    </div>
+    <div class="TextBox">
+        <input type="password" placeholder="password" name ="password" required>
+    </div>
+
+     <input type="file" name="photo">
+
+    <input type="submit" value="Submit" {% if data == "false"%}disabled="disabled"{% endif %} class="SubmitBox">
+
+ </form>
+</body>
+</html>

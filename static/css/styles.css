@@ -1,0 +1,113 @@
+*{
+    font-family:'Segoe UI' ;
+    margin: 0px;
+    padding:0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    min-height :100vh;
+    background : linear-gradient(to right top,#000000,#003366,#f9f9f9);
+}
+form{
+    background: #888888;
+    width: 350px;
+    height:580px;
+    padding: 75px 50px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+}
+h1{
+    text-align:center;
+    margin-bottom:45px;
+    color:white;
+    font-size:40px;
+
+}
+.TextBox{
+    border-bottom: 2px solid white;
+    position:relative;
+    margin:35px 0;
+    color:#c4dce8;
+    font-size:13px;
+
+}
+.TextBox input{
+    background:None;
+    border:none;
+}
+.SubmitBox{
+    height:45px;
+    width:100%;
+    border:none;
+    outline:none;
+    background: linear-gradient(to right top,#000000,#003366,#f9f9f9);
+    background-size:200%;
+    color:white;
+    font-size:16px;
+
+
+}
+    .SubmitBox:hover{
+        background-position: right;
+        font-size: 18px;
+
+    }
+
+
+    .CameraBox{
+        padding:30px;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        background-image:url('/static/images/speed-camera.png');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin:35px 0;
+
+
+    }
+    .DescriptionBox{
+        color:white;
+        margin-top:45px;
+    }
+
+    .MenuBox{
+        padding-bottom: 132px;
+        padding-top:92px;
+        margin:auto;
+        width:980px;
+        height:496px;
+        display:flex;
+        overflow: visible;
+        padding-right: 48px;
+        position:relative;
+        flex: 1 0 0px;
+
+
+
+    }
+
+    .LogoBox{
+        padding: 8px 0 16px 0;
+    }
+    .Logo{
+        height:200px;
+        width:200px;
+        margin:-20px;
+        border:0;
+    }
+    .TitleBox{
+        line-height:100px;
+        margin-bottom: 20px;
+        width: 532px;
+        height:100px;
+        padding: 8px 0 16px 0;
+
+    }

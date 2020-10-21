@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../../static/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome User</title>
+</head>
+<body>
+{% block content %}
+
+        <h1>{{profile.username }}</h1>
+        <h2>{{profile.password }}</h2>
+    {% if profile.photo %}
+        <img src="{{ profile.photo.url }}" alt="image" />
+    {% endif %}
+
+
+
+
+
+{% endblock %}
+</body>
+</html>

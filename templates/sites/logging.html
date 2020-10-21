@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../../static/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+</head>
+
+<body>
+
+<form method="POST" action="/welcome/">
+    {% csrf_token %}
+  <h1>Login</h1>
+    <div class="TextBox">
+        <input type="text" placeholder="username" name="username">
+    </div>
+    <div class="TextBox">
+        <input type="password" placeholder="password" name="password">
+    </div>
+    <center><label>{{ msg }}</label></center>
+    <input type="submit" value="Login" class="SubmitBox">
+
+
+
+
+    <div>
+        Don't have an account ?
+        <a href="#">Sign Up</a>
+    </div>
+
+</form>
+</body>
+</html>
+
